@@ -37,12 +37,12 @@ const WorkExperienceSection = () => {
         { title: 'Software Developer', duration: 'Feb 2026 – May 2026', note: 'Promoted from intern' },
         { title: 'Frontend Developer Intern', duration: 'Aug 2025 – Feb 2026', note: '' }
       ],
-      description: 'Promoted from intern to Software Developer. Shipped production frontends across 5+ products — spanning web, admin, and mobile — including a Google Ads SaaS dashboard built end-to-end and a MinoriLabs delivery sprint led directly with the client.',
+      description: 'Promoted from intern to Software Developer. Shipped production frontends across 5 client analytics dashboards — spanning web, admin, and mobile — including a Google Ads SaaS dashboard built end-to-end and a MinoriLabs delivery sprint led directly with the client.',
       responsibilities: [
         'Built a Google Ads SaaS analytics dashboard end-to-end for a client — owned UI design, API, and full stack delivery single-handedly; became the client\'s primary operational tool (per founder\'s LinkedIn recommendation).',
         'Led frontend of MinoriLabs: audited codebase, fixed broken filters/dashboards/API integrations, and ran a 10-day sprint coordinating frontend devs, backend engineers, and the client directly — delivered before deadline.',
-        'Shipped production frontends across 5+ products in Next.js 15/16 (App Router) + React 19 + TypeScript: Freshbuyzar grocery (web + RN mobile app), QR Code Creator SaaS, Riders Choice e-commerce, MinoriLabs, Google Ads SaaS.',
-        'Integrated Stripe + Razorpay end-to-end; improved Lighthouse 50 → 95 via Promise.all parallelization + server components; Vitest coverage 538/538 on qrcodecreator-fe; Playwright e2e before every push.'
+        'Shipped production frontends across 5 client analytics dashboards in Next.js 15/16 (App Router) + React 19 + TypeScript: Freshbuyzar grocery (web + RN mobile app), QR Code Creator SaaS, Riders Choice e-commerce, MinoriLabs, Google Ads SaaS.',
+        'Integrated Stripe + Razorpay end-to-end; improved Lighthouse 50 → 95 via Promise.all parallelization + server components; maintained unit and component test coverage with Vitest and React Testing Library; Playwright e2e before every push.'
       ],
       technologies: ['Next.js 15/16', 'React 19', 'TypeScript', 'React Native', 'Expo', 'TanStack Query', 'Stripe', 'Razorpay', 'Django DRF', 'Vitest', 'Playwright', 'Tailwind CSS']
     }

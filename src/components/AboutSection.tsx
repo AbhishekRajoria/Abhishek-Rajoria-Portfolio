@@ -126,7 +126,7 @@ const AboutSection = () => {
                     Currently <em className="text-purple-400">open to full-stack and frontend roles</em>.
                   </p>
                   <p className="text-base sm:text-lg text-foreground-muted leading-relaxed mb-4 font-body">
-                    At <span className="text-gradient-amber font-medium">PRNK Infotech</span> I shipped frontends across 5+ products in
+                    At <span className="text-gradient-amber font-medium">PRNK Infotech</span> I shipped frontends across 5 client analytics dashboards in
                     <span className="text-gradient-purple font-medium"> Next.js 15/16 + React 19 + TypeScript</span>,
                     owned auth and payments end-to-end, and drove quality with Vitest and Playwright.
                   </p>

@@ -5,6 +5,7 @@ import '../styles/editorial.css';
 import marketPulseShot from '../Media/MarketPulse/Homepage_Light.png';
 import stayFinderShot from '../Media/StayFinder/01-home-hero.png';
 import festifyShot from '../Media/Festify/festify-eventspage.png';
+import pulseKitShot from '../Media/PulseKit/dashboard.png';
 
 const EMAIL = 'AbhishekRajoria24@gmail.com';
 const PHONE = '+91 9319054781';
@@ -77,6 +78,23 @@ const projects: Project[] = [
     shot: festifyShot,
     alt: 'Festify events page',
   },
+  {
+    n: '04',
+    title: 'PulseKit',
+    tagline: 'Developer monitoring and alerting platform',
+    meta: '2026',
+    blurb:
+      'A developer monitoring platform with Redis sliding-window rate limiting, BullMQ job queues, PostgreSQL append-only delivery logs, and a Next.js App Router dashboard. In progress.',
+    points: [
+      'Redis sliding-window rate limiter with BullMQ job queue for reliable alert delivery.',
+      'PostgreSQL append-only delivery logs with a Next.js App Router dashboard for real-time visibility.',
+    ],
+    tech: 'Next.js · Redis · BullMQ · PostgreSQL · TypeScript',
+    live: '',
+    code: 'https://github.com/AbhishekRajoria/PulseKit',
+    shot: pulseKitShot,
+    alt: 'PulseKit dashboard',
+  },
 ];
 
 const experience = {
@@ -90,8 +108,8 @@ const experience = {
   bullets: [
     <>Built a Google Ads SaaS analytics dashboard <span className="ed-stat">end to end</span> for a client, owning UI design, API, and full-stack delivery <span className="ed-stat">single-handedly</span>; it became the client’s primary operational tool, per the founder’s LinkedIn recommendation.</>,
     <>Led the frontend of <span className="ed-stat">MinoriLabs</span>: audited the codebase, fixed broken filters, dashboards, and API integrations, and ran a <span className="ed-stat">ten-day sprint</span> coordinating frontend devs, backend engineers, and the client directly, delivered before deadline.</>,
-    <>Shipped production frontends across <span className="ed-stat">5+ products</span> in Next.js 15/16 (App Router), React 19, and TypeScript: Freshbuyzar grocery (web and a React Native app), QR Code Creator SaaS, Riders Choice, MinoriLabs, and the Google Ads SaaS.</>,
-    <>Integrated <span className="ed-stat">Stripe and Razorpay</span> end to end; improved Lighthouse <span className="ed-stat">from 50 to 95</span> via Promise.all parallelization and server components; reached <span className="ed-stat">538/538</span> Vitest coverage on qrcodecreator-fe, with Playwright e2e before every push.</>,
+    <>Shipped production frontends across <span className="ed-stat">5 client analytics dashboards</span> in Next.js 15/16 (App Router), React 19, and TypeScript: Freshbuyzar grocery (web and a React Native app), QR Code Creator SaaS, Riders Choice, MinoriLabs, and the Google Ads SaaS.</>,
+    <>Integrated <span className="ed-stat">Stripe and Razorpay</span> end to end; improved Lighthouse <span className="ed-stat">from 50 to 95</span> via Promise.all parallelization and server components; maintained unit and component test coverage with Vitest and React Testing Library, with Playwright e2e before every push.</>,
   ],
 };
 
@@ -302,7 +320,7 @@ const Redesign = () => {
                 <div className="ed-hero-index">
                   <div className="ed-hero-index-h">
                     <span className="ed-label">Selected work</span>
-                    <span className="ed-mono" style={{ fontSize: '0.72rem', color: 'var(--muted)' }}>03</span>
+                    <span className="ed-mono" style={{ fontSize: '0.72rem', color: 'var(--muted)' }}>04</span>
                   </div>
                   {projects.map((p) => (
                     <a key={p.n} href={`#w-${p.n}`} className="ed-hero-index-row" onClick={() => openOne(p.n)}>
@@ -397,7 +415,7 @@ const Redesign = () => {
                               <p className="ed-eyebrow" style={{ marginTop: 24, marginBottom: 10 }}>Stack</p>
                               <p className="ed-tag">{p.tech}</p>
                               <div className="flex items-center" style={{ gap: 22, marginTop: 24 }}>
-                                <a href={p.live} target="_blank" rel="noopener noreferrer" className="ed-link ed-mono" style={{ fontSize: '0.85rem' }}>Live ↗</a>
+                                {p.live && <a href={p.live} target="_blank" rel="noopener noreferrer" className="ed-link ed-mono" style={{ fontSize: '0.85rem' }}>Live ↗</a>}
                                 <a href={p.code} target="_blank" rel="noopener noreferrer" className="ed-link ed-mono" style={{ fontSize: '0.85rem' }}>Code ↗</a>
                               </div>
                             </div>
